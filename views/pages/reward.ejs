@@ -24,16 +24,21 @@
             <header id="header">
                 <h1 class="text-light">Ganador:</h1>
                 <% if (typeof user !="undefined" ) { for (let i=0; i < user.length; i++) { %>
-                    <h1 class="text-light">¡<%= user[i].kp_Name %> <%= user[i].kp_LastName %>!🎉</h1>
-                    <h1 class="text-light"><%= user[i].kp_Sucursal %></h1>
+                    <h1 class="text-light">¡<%= user[i].kp_Name %>
+                            <%= user[i].kp_LastName %>!🎉</h1>
+                    <h1 class="text-light">
+                        <%= user[i].kp_Sucursal %>
+                    </h1>
                     <hr>
                     <% } %>
                         <% } %>
+                            <a href="/dashboard">Regresar</a>
             </header>
 
             <!-- Footer -->
             <footer id="footer">
-                <span class="copyright">&copy;Design: <a href="#">Kuponner</a>.</span>
+                <span class="copyright text-light">&copy;<a class="text-light" href="#"> Kuponner | Leblanc |
+                        DondeLaParce</a></span>
             </footer>
 
         </div>
