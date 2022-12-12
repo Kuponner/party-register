@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Registro Fiesta de Navidad</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="has-navbar-mobile">
+
+    <header class="header">
+    </header>
+
+    <!-- **************** MAIN CONTENT START **************** -->
+    <main>
+
+
+        <!-- Booking table START -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card border rounded-3">
+                    <!-- Card header START -->
+                    <div class="card-header border-bottom">
+                        <div class="d-sm-flex justify-content-between align-items-center">
+                            <h5 class="mb-2 mb-sm-0">Registro de entrada, Fiesta de navidad</h5>
+                            <a href="/reward" class="btn btn-sm btn-primary mb-0">Sortear Premio</a>
+                        </div>
+                    </div>
+                    <!-- Card header END -->
+
+                    <!-- Card body START -->
+                    <div class="card-body">
+
+                        <!-- Promotion list START -->
+                        <div class="table-responsive border-0">
+                            <table class="table align-middle p-4 mb-0 table-hover table-shrink" id="example">
+                                <!-- Table head -->
+                                <thead class="table-light">
+                                    <tr>
+                                        <th scope="col" class="border-0 rounded-start">#</th>
+                                        <th scope="col" class="border-0">Nombre</th>
+                                        <th scope="col" class="border-0">Apellido</th>
+                                        <th scope="col" class="border-0">Sucursal</th>
+                                    </tr>
+                                </thead>
+                                <% data.forEach((user)=> { %>
+
+                                    <!-- Table body START -->
+                                    <tbody class="border-top-0">
+                                        <!-- Table item -->
+                                        <tr>
+                                            <td>
+                                                <h6 class="mb-0">
+                                                    <%= user.kp_ID %>
+                                                </h6>
+                                            </td>
+                                            <td>
+                                                <h6 class="mb-0"><a href="#">
+                                                        <%= user.kp_Name %>
+                                                    </a>
+                                                </h6>
+                                            </td>
+                                            <td>
+                                                <%= user.kp_Name %>
+                                            </td>
+                                            <td>
+                                                <%= user.kp_Sucursal %>
+                                            </td>
+                                        </tr>
+
+
+                                        <!-- Table item -->
+                                        <% }) %>
+                                    </tbody>
+                                    <!-- Table body END -->
+                            </table>
+                        </div>
+                        <!-- Promotion list END -->
+                    </div>
+                    <!-- Card body END -->
+
+                </div>
+            </div>
+        </div>
+        <!-- Booking table END -->
+        </div>
+        </section>
+        <!-- =======================
+                        Content END -->
+
+    </main>
+    <!-- **************** MAIN CONTENT END **************** -->
+    <!-- Jquery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Popper.js -->
+    <script src="assets/js/popper/popper.min.js"></script>
+
+    <!-- datatables JS -->
+    <script type="text/javascript" src="assets/js/datatables/datatables.js"></script>
+    <script type="text/javascript" src="assets/js/datatables/datatables.min.js"></script>
+
+    <!-- para usar botones en datatables JS -->
+    <script src="assets/js/datatables/Buttons-1.5.6/js/dataTables.buttons.min.js"></script>
+    <script src="assets/js/datatables/JSZip-2.5.0/jszip.min.js"></script>
+    <script src="assets/js/datatables/pdfmake-0.1.36/pdfmake.min.js"></script>
+    <script src="assets/js/datatables/pdfmake-0.1.36/vfs_fonts.js"></script>
+    <script src="assets/js/datatables/Buttons-1.5.6/js/buttons.html5.min.js"></script>
+
+    <!-- código JS propìo-->
+    <script type="text/javascript" src="assets/js/datatables/main.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+
+</html>
